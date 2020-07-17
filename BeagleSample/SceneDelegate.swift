@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Beagle
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,25 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // If this scene's self.window is nil then set a new UIWindow object to it.
-        self.window = self.window ?? UIWindow()
-
-        // Set this scene's window's background color.
-        self.window!.backgroundColor = UIColor.red
-
-        // Create a ViewController object and set it as the scene's window's root view controller.
-        let beagleViewController = Beagle.screen(
+        guard let windowScene = (scene as? UIWindowScene) else {return}
+        let beagleScreen = Beagle.screen(
             .declarative(
                 BeagleScreen.make()
             )
         )
-        self.window!.rootViewController = beagleViewController
-
-        // Make this scene's window be visible.
-        self.window!.makeKeyAndVisible()
-
-        guard scene is UIWindowScene else { return }
-        guard let _ = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = beagleScreen
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
