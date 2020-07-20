@@ -15,7 +15,7 @@ class BeagleScreen {
             child: Container(
                 children: [
                     Image(.value(.remote(.init(url: "https://uploads-ssl.webflow.com/5cac6236f8d44ddee118d97c/5ea723abad4ab09a53fa351d_Beagle-azul-p-500.png")))),
-                    Text("Framework que atualiza UI via backend"),
+                    TitleText(text: "Framework que atualiza UI via backend"),
                     Text("O Beagle é uma plataforma Server-Driven para iOS, Android e Web que facilita a construção de telas por meio de um backend, permitindo que telas e fluxos nativos sejam alterados utilizando apenas JSON."),
                     
                     Button(text: "Download", onPress: [Navigate.openExternalURL("https://docs.usebeagle.io/primeiros-passos/instalando-beagle")]),
