@@ -14,6 +14,8 @@
 		420CDC2224C1DF7500967EB3 /* BeagleSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CDC2124C1DF7500967EB3 /* BeagleSampleTests.swift */; };
 		420CDC2D24C1DF7500967EB3 /* BeagleSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CDC2C24C1DF7500967EB3 /* BeagleSampleUITests.swift */; };
 		420CDC3B24C1DFD700967EB3 /* BeagleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CDC3A24C1DFD700967EB3 /* BeagleScreen.swift */; };
+		420CDC4E24C62AC100967EB3 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CDC4D24C62AC100967EB3 /* Styles.swift */; };
+		420CDC5024C62D7700967EB3 /* BeagleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CDC4F24C62D7700967EB3 /* BeagleConfig.swift */; };
 		44CFEAF6F64B21EFF9087754 /* Pods_BeagleSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACD5CDB7DEF16541F53AD6 /* Pods_BeagleSample.framework */; };
 		7C73D5EAAAFF3C319B2F981F /* Pods_BeagleSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5F5B4816660FBCE6F0BD51 /* Pods_BeagleSampleTests.framework */; };
 		A6CB2AC287E9D2C534A331B5 /* Pods_BeagleSample_BeagleSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95F6710B5A10D2249A57DF1 /* Pods_BeagleSample_BeagleSampleUITests.framework */; };
@@ -51,6 +53,8 @@
 		420CDC2C24C1DF7500967EB3 /* BeagleSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleSampleUITests.swift; sourceTree = "<group>"; };
 		420CDC2E24C1DF7500967EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		420CDC3A24C1DFD700967EB3 /* BeagleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeagleScreen.swift; sourceTree = "<group>"; };
+		420CDC4D24C62AC100967EB3 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		420CDC4F24C62D7700967EB3 /* BeagleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeagleConfig.swift; sourceTree = "<group>"; };
 		5C5F5B4816660FBCE6F0BD51 /* Pods_BeagleSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeagleSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC561FB6448B80AFBD653BA /* Pods-BeagleSample-BeagleSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleSample-BeagleSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-BeagleSample-BeagleSampleUITests/Pods-BeagleSample-BeagleSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		837D5C942CCBAF322CFD1DD1 /* Pods-BeagleSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-BeagleSampleTests/Pods-BeagleSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,9 +118,12 @@
 		420CDC0924C1DF6200967EB3 /* BeagleSample */ = {
 			isa = PBXGroup;
 			children = (
+				420CDC3C24C5FC0600967EB3 /* CustomComponents */,
 				420CDC0A24C1DF6200967EB3 /* AppDelegate.swift */,
 				420CDC0C24C1DF6200967EB3 /* SceneDelegate.swift */,
 				420CDC3A24C1DFD700967EB3 /* BeagleScreen.swift */,
+				420CDC4D24C62AC100967EB3 /* Styles.swift */,
+				420CDC4F24C62D7700967EB3 /* BeagleConfig.swift */,
 				420CDC1324C1DF7000967EB3 /* Assets.xcassets */,
 				420CDC1524C1DF7000967EB3 /* LaunchScreen.storyboard */,
 				420CDC1824C1DF7000967EB3 /* Info.plist */,
@@ -140,6 +147,13 @@
 				420CDC2E24C1DF7500967EB3 /* Info.plist */,
 			);
 			path = BeagleSampleUITests;
+			sourceTree = "<group>";
+		};
+		420CDC3C24C5FC0600967EB3 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 		66FA49323CDF326F15C4FF70 /* Pods */ = {
@@ -404,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				420CDC3B24C1DFD700967EB3 /* BeagleScreen.swift in Sources */,
+				420CDC5024C62D7700967EB3 /* BeagleConfig.swift in Sources */,
+				420CDC4E24C62AC100967EB3 /* Styles.swift in Sources */,
 				420CDC0B24C1DF6200967EB3 /* AppDelegate.swift in Sources */,
 				420CDC0D24C1DF6200967EB3 /* SceneDelegate.swift in Sources */,
 			);
